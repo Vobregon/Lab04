@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navegacion para probar en breve-->
+    <nav class="navbar">
+        <div class="logo">Mi producto</div>
+        <div class="enlaces">
+            <a href="">Inicio</a>
+            <a href="">Servicios</a>
+            <a href="">Contacto</a>
+
+        </div>
+    </nav>
+     <!--Trajetas-->
+     <main class="contenedor">
+        <h1 class="titulo-principal">Nuestras Promociones</h1>
+        <div class="grid-tarjetas">
+            <article class="card">
+                <h3>Promo Casual</h3>
+                <p>2 camisas Casual por 89.90</p>
+                <button class="btn">Elegir Plan</button>
+            </article>
+            <article class="card">
+                <h3>Promo Vestir</h3>
+                <p>2 camisas Vestir por 79.90</p>
+                <button class="btn">Elegir Plan</button>
+
+            </article>
+            <article class="card">
+                <h3>Promo Elegante</h3>
+                <p>2 camisas Casual por 94.90</p>
+                <button class="btn">Elegir Plan</button>
+
+            </article>
+        </div>
+        <section class="form-validado">
+            <h2>Cont&aacute;ctanos</h2>
+            <p>Ejemplo de Validacion por navegador</p>
+            <form class="form-validado">
+                <div class="campo">
+                    <label for="nombre">Nombre Completo (min 3 letras):</label>
+                    <input type="text" id="nombre" name="nombre" minlength="3" placeholder="Ejem.Mauricio Medina">
+                </div>
+                 <div class="campo">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" name="email" placeholder="name@Ejemplo.com">
+                </div>
+                 <div class="campo">
+                    <label for="telefono">Telefono (Exactamente 9 digitos):</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ejem. 943218474">
+                </div>
+
+                 <div class="campo">
+                    <label for="motivo">Motivo de Contacto</label>
+                   <select name="motivo" id="motivo" required>
+                     <option value="">Selecciona una opcion</option>
+                     <option value="venta">Ventas</option>
+                     <option value="soporte">Soporte</option>
+                     <option value="reclamo">Reclamos</option>
+
+                   </select>
+                </div>
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos" >Acepto los terminos y condiciones de privacidad</label>
+                </div>
+                <button type="submit" class="btn">Enviar Formulario</button>
+
+            </form>
+
+        </section>
+     </main>
+</body>
+</html>
